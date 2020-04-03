@@ -4,11 +4,7 @@ import "./Scoreboard.css";
 import AddPlayer from "./AddPlayer";
 export default class Scoreboard extends Component {
   state = {
-    players: [
-      { id: 1, name: "Alex", score: 0 },
-      { id: 2, name: "David", score: 0 },
-      { id: 3, name: "Arnie", score: 0 }
-    ]
+    players: [{ id: 1, name: "Pasta Pesto", score: 0 }]
   };
 
   renderPlayer = player => {
@@ -57,7 +53,7 @@ export default class Scoreboard extends Component {
     console.log(players_copy); // <!-- add console.log's if you're not sure!
     return (
       <div className="scoreboard">
-        <h1>Scoreboard</h1>
+        <h1>Dinner Choices</h1>
         <ul>{players_copy.map(this.renderPlayer)}</ul>
         <AddPlayer addPlayer={this.addPlayer} />
       </div>

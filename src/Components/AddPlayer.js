@@ -31,7 +31,7 @@ export default class AddPlayer extends Component {
               value={this.state.name}
             />
           </label>
-          <input type="submit" value="New Player" />
+          <input type="submit" value="Add to list" />
         </form>
       </div>
     );
